@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<script src="js/jquery-3.2.1.js"></script>
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" href="css/custom.min.css">
+</head>
+<body>
+	<div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="../" class="navbar-brand">Bootswatch</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Themes <span class="caret"></span></a>
+              
+            </li>
+            <li>
+              <a href="../help/">Help</a>
+            </li>
+            <li>
+              <a href="">Blog</a>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">United <span class="caret"></span></a>
+              
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="" target="_blank">Built With Bootstrap</a></li>
+            <li><a href="" target="_blank">WrapBootstrap</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+	<div class="container">
+
+		<div id="banner" class="page-header">
+			<div  class="row">
+				<div class="col-md-2">
+					<div class="list-group table-of-contents">
+						<a class="list-group-item" href="#navbar">Navbar</a>
+						<a class="list-group-item" href="#buttons">Buttons</a>
+						<a class="list-group-item" href="#typography">Typography</a>
+						<a class="list-group-item" href="#tables">Tables</a>
+						<a class="list-group-item" href="#forms">Forms</a>
+						<a class="list-group-item" href="#navs">Navs</a>
+						<a class="list-group-item" href="#indicators">Indicators</a>
+						<a class="list-group-item" href="#progress-bars">Progress bars</a>
+						<a class="list-group-item" href="#containers">Containers</a>
+						<a class="list-group-item" href="#dialogs">Dialogs</a>
+					</div>
+				</div>
+				<div class="col-md-10">
+					<div class="comments-section">
+						<table id="comments" class="table">
+								<thead>
+									<th> ID </th>
+									<th> Name </th>
+									<th> Email </th>
+									<th> Content </th>
+									<th></th>
+									<th></th>
+								</thead>
+								<tbody>
+									
+								</tbody>
+						</table>
+						<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#adduser">Add user</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- addUSer -->
+<div id="adduser" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Add user</h4>
+      </div>
+      <div class="modal-body">
+				 <form class="form-horizontal" role="form" novalidate>
+                  <div class="form-group">
+                    <label  class="col-sm-2 control-label" for="name">Name</label>
+                    <div class="col-sm-10">
+                        <input type="name" class="form-control"  id="name" placeholder="name"/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="email" >Password</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" placeholder="email"/>
+                    </div>
+                  </div>
+									
+									<div class="form-group">
+                    <label class="col-sm-2 control-label" for="desc" >Description</label>
+                    <div class="col-sm-10">
+												
+												<textarea style="resize:vertical" type="text" class="form-control" id="desc" placeholder="description"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+											<button type="button" id="submit" class="btn btn-success">Submit</button>
+											<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    </div>
+                  </div>
+                </form>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- updateUSer -->
+<div id="updateuser" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Update user</h4>
+      </div>
+      <div class="modal-body">
+				 <form class="form-horizontal" role="form" novalidate>
+                  <div class="form-group">
+                    <label  class="col-sm-2 control-label" for="uname">Name</label>
+                    <div class="col-sm-10">
+                        <input type="name" class="form-control"  id="uname" placeholder="name"/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="uemail" >Password</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="uemail" placeholder="email"/>
+                    </div>
+                  </div>
+									
+									<div class="form-group">
+                    <label class="col-sm-2 control-label" for="udesc" >Description</label>
+                    <div class="col-sm-10">
+												<textarea style="resize:vertical" type="text" class="form-control" id="udesc" placeholder="description"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+											<button type="button" id="update" class="btn btn-success">Update</button>
+											<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    </div>
+                  </div>
+                </form>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="js/custom.js"></script>
+</body>
+
+	<!--<script src="js/main.js"></script>-->
+	
+</html> 

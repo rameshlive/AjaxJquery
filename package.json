@@ -1,0 +1,11 @@
+{
+  "name": "jsonserver",
+  "version": "1.0.0",
+  "description": "Fake REST API testing",
+  "main": "index.html",
+  "scripts": {
+    "json:server": "json-server --watch db.json"
+  },
+  "author": "",
+  "license": "ISC"
+}
