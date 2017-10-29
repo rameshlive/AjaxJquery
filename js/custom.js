@@ -138,7 +138,7 @@ $(function(){
 
         }).done(function(){
             load();
-             $("#updateuser").modal('hide');
+             $("#updateuser").modal('hide');  
         })
 
     }
